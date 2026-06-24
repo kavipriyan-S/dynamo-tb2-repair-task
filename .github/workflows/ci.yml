@@ -16,3 +16,7 @@ jobs:
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           harbor run -p . --agent oracle
+      - name: Run Harbor Nop
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          harbor run -p . --agent nop
